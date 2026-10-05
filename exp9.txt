@@ -1,0 +1,10 @@
+systemctl list-units --type=service --state=running
+systemctl status auditd.service
+sudo systemctl stop auditd.service
+sudo systemctl enable auditd.service
+sudo nano /etc/ssh/sshd_config
+sudo sshd -t
+sudo ufw status
+sudo ufw allow 22/tcp
+sudo ufw enable
+sudo apt update
