@@ -1,0 +1,16 @@
+whoami
+id
+
+sudo adduser anusha
+sudo passwd anusha
+
+sudo cat /etc/shadow
+sudo chage -l anusha
+
+sudo ufw status
+sudo ufw enable
+sudo ufw disable
+sudo ufw allow 22/tcp
+
+sudo iptables -L -n -v
+sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
